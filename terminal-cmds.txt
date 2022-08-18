@@ -1,0 +1,22 @@
+npm install @openzeppelin/contracts
+
+npm install --save-dev hardhat
+
+npx hardhat
+
+// para correr modo efimero
+npx hardhat run scripts/deploy.ts
+
+// para correr en nodo local 
+npx hardhat node
+
+npx hardhat run --network localhost scripts/deploy.ts
+
+// para correr en otra red
+npx hardhat run --network goerli scripts/deploy-rtc.ts
+
+// verificar (address del contrato y parametros iniciales - en wei )
+npx hardhat verify --network goerli 0x693Ef0B107F680D69182089C2A0A05901F08F303 1000000000000000000000
+
+// test
+npx hardhat test
