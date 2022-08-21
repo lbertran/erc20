@@ -22,11 +22,11 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract RooftopHero is ERC721URIStorage, Ownable {
+contract CorrientesHero is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("RooftopHero", "RTH") {}
+    constructor() ERC721("CorrientesHero", "CORRHERO") {}
 
     function awardItem(address player, string memory tokenURI)
         public
