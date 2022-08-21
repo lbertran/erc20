@@ -13,10 +13,10 @@ npx hardhat node
 npx hardhat run --network localhost scripts/deploy.ts
 
 // para correr en otra red
-npx hardhat run --network goerli scripts/deploy-rtc.ts
+npx hardhat run --network goerli scripts/deploy-erc721.ts
 
 // verificar (address del contrato y parametros iniciales - en wei )
-npx hardhat verify --network goerli 0x693Ef0B107F680D69182089C2A0A05901F08F303 1000000000000000000000
+npx hardhat verify --network goerli 0x747BDe2008be9388ecE5A1853B354D969B752E2D
 
 // test
 npx hardhat test
